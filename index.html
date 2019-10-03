@@ -3,10 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href = "css/main.css" rel = "stylesheet">
+        <link href = "css/elements.css" rel = "stylesheet">
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Our YouTube university</title>
     </head>
     <body>
-        Hello, world
+        <div id = "app">
+            <header>
+                <ion-icon id = "header-menu-icon" name = "menu" @click = "isMenuOpened = !isMenuOpened"></ion-icon>
+                <div id = "header-youtube-icon"></div>
+                <div id = "header-title"><ion-icon name = "search" id = "header-title-icon"></ion-icon> How to create your own video for YouTube?</div>
+            </header>
+            <transition name = "menuTransition">
+                <aside v-show = "isMenuOpened">
+                    <ol>
+                        <li><a href = "google.com">Веб-страница 1</a></li>
+                        <li><a href = "google.com">Веб-страница 2</a></li>
+                        <li><a href = "google.com">Веб-страница 3</a></li>
+                        <li><a href = "google.com">Веб-страница 4</a></li>
+                    </ol>
+                </aside>
+            </transition>
+        </div>
+
+        <script>
+            const app = new Vue({
+                el: "#app",
+                data: {
+                    isMenuOpened: false
+                }
+            });
+        
+        </script>
     </body>
 </html>

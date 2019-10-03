@@ -1,0 +1,84 @@
+header{
+    display: flex;
+    margin: 0.4vw;
+}
+
+aside{
+    width: 10vw;
+    height: 25vw;
+    background-color: rgb(226, 221, 221);
+    margin: 0;
+    padding: 1.5vw;
+    border-radius: 0 2% 2% 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#header-menu-icon{
+    width: 1.8vw;
+    height: 1.8vw;
+    
+    transition: all linear .4s;
+    cursor: pointer;
+}
+
+#header-menu-icon:hover{
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#header-youtube-icon{
+    --size: 2.4vw;
+
+    margin-left: 1vw;
+
+
+    width: var(--size);
+    height: var(--size);
+    
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png");
+    background-size: var(--size);
+    background-repeat: no-repeat;
+}
+
+#header-title{
+    width: 25vw;
+    height: 1.5vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+    border: 1.5px solid black;
+    margin-left: 1vw;
+    padding: 0.1vw;
+    color: rgb(129, 129, 129);
+}
+
+#header-title-icon{
+    margin: 1px;
+}
+
+aside ol li{
+    font-size: 1.2vw;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline black;
+}
+
+/* TRANSITIONS */
+
+.menuTransition-enter-active, .menuTransition-leave-active{
+    transition: all linear .3s;
+}
+
+.menuTransition-enter, .menuTransition-leave-to{
+    transform: translateX(-100%);
+}
