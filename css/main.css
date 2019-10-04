@@ -1,3 +1,7 @@
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
 header{
     display: flex;
     margin: 0.4vw;
@@ -49,7 +53,6 @@ aside{
     width: 25vw;
     height: 1.5vw;
     font-size: 1.1vw;
-    font-weight: bold;
     border: 1.5px solid black;
     margin-left: 1vw;
     padding: 0.1vw;
@@ -61,7 +64,7 @@ aside{
 }
 
 #header-title-text{
-    margin: 5px;
+    margin: 10px;
 }
 
 aside ol li{
@@ -80,7 +83,7 @@ a:hover{
 /* TRANSITIONS */
 
 .menuTransition-enter-active, .menuTransition-leave-active{
-    transition: all linear .3s;
+    transition: all linear .2s;
 }
 
 .menuTransition-enter, .menuTransition-leave-to{
