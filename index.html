@@ -15,15 +15,15 @@
             <header>
                 <ion-icon id = "header-menu-icon" name = "menu" @click = "isMenuOpened = !isMenuOpened"></ion-icon>
                 <div id = "header-youtube-icon"></div>
-                <div id = "header-title"><ion-icon name = "search" id = "header-title-icon"></ion-icon> How to create your own video for YouTube?</div>
+                <div id = "header-title"></ion-icon><span id = "header-title-text">Как делать хорошие видео на YouTube?</span></div>
             </header>
             <transition name = "menuTransition">
                 <aside v-show = "isMenuOpened">
                     <ol>
-                        <li><a href = "google.com">Веб-страница 1</a></li>
-                        <li><a href = "google.com">Веб-страница 2</a></li>
-                        <li><a href = "google.com">Веб-страница 3</a></li>
-                        <li><a href = "google.com">Веб-страница 4</a></li>
+                        <li><a href = "https://google.com">Веб-страница 1</a></li>
+                        <li><a href = "https://google.com">Веб-страница 2</a></li>
+                        <li><a href = "https://google.com">Веб-страница 3</a></li>
+                        <li><a href = "https://google.com">Веб-страница 4</a></li>
                     </ol>
                 </aside>
             </transition>
