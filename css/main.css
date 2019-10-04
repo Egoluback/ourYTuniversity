@@ -10,7 +10,7 @@ header{
 aside{
     position: absolute;
     width: 10vw;
-    height: 25vw;
+    height: 40vh;
     background-color: rgb(231, 230, 230);
     margin: 0;
     padding: 1.5vw;
@@ -89,4 +89,23 @@ a:hover{
 
 .menuTransition-enter, .menuTransition-leave-to{
     transform: translateX(-100%);
+}
+
+section{
+    padding: 0.5vw;
+}
+
+#section-title-container{
+    font-size: 3em;
+    text-align: center;
+}
+
+#section-text-container{
+    font-size: 1.5em;
+}
+
+footer{
+    margin-top: 59vh;
+    padding: 1vw;
+    background: rgb(241, 241, 241);
 }

@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
-        <link href = "css/main.css" rel = "stylesheet">
-        <link href = "css/elements.css" rel = "stylesheet">
+        <link href = "../css/main.css" rel = "stylesheet">
+        <!-- <link href = "css/elements.css" rel = "stylesheet"> -->
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,21 +15,21 @@
         <div id = "app">
             <header>
                 <ion-icon id = "header-menu-icon" name = "menu" @click = "isMenuOpened = !isMenuOpened"></ion-icon>
-                <a href = "index.html"><div id = "header-youtube-icon"></div></a>
+                <a href = "../index.html"><div id = "header-youtube-icon"></div></a>
                 <div id = "header-title"></ion-icon><span id = "header-title-text">Как делать хорошие видео на YouTube?</span></div>
             </header>
             <transition name = "menuTransition">
                 <aside v-show = "isMenuOpened">
                     <ol>
-                        <li><a href = "index.html">Главная страница/Старт</a></li>
-                        <li><a href = "pages/programs.html">Какие программы нужны</a></li>
-                        <li><a href = "pages/howtouse.html">Как использовать программы</a></li>
-                        <li><a href = "pages/howtopost.html">Как загрузить видео на YouTube</a></li>
+                        <li><a href = "../index.html">Главная страница/Старт</a></li>
+                        <li><a href = "programs.html">Какие программы нужны</a></li>
+                        <li><a href = "howtouse.html">Как использовать программы</a></li>
+                        <li><a href = "howtopost.html">Как загрузить видео на YouTube</a></li>
                     </ol>
                 </aside>
             </transition>
             <section>
-                <div id = "section-title-container">Как начать?</div>
+                <div id = "section-title-container">Какие программы нужны для монтажа?</div>
                 <div id = "section-text-container">
                         Не следует, однако, забывать, что сложившаяся структура организации требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же начало повседневной работы по формированию позиции позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Равным образом, постоянный количественный рост и сфера нашей активности требуют определения и уточнения системы массового участия. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу специалистов участие в формировании новых предложений. Равным образом, консультация с широким активом в значительной степени обусловливает создание позиций, занимаемых участниками в отношении поставленных задач.
                 </div>
