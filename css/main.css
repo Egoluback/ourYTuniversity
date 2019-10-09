@@ -102,10 +102,19 @@ section{
 
 #section-text-container{
     font-size: 1.5em;
+	padding: 1vw;
+}
+
+.img-link:hover{
+	text-decoration: none;
 }
 
 footer{
-    margin-top: 59vh;
     padding: 1vw;
     background: rgb(241, 241, 241);
+}
+
+#genres-img-container{
+	text-align: center;
+	margin: 1vw;
 }

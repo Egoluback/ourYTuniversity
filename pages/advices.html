@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+        <link href = "../css/main.css" rel = "stylesheet">
+        <!-- <link href = "css/elements.css" rel = "stylesheet"> -->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Our YouTube university</title>
+    </head>
+    <body>
+        <div id = "app">
+            <header>
+                <ion-icon id = "header-menu-icon" name = "menu" @click = "isMenuOpened = !isMenuOpened"></ion-icon>
+                <a href = "../index.html"><div id = "header-youtube-icon"></div></a>
+                <div id = "header-title"></ion-icon><span id = "header-title-text">Как делать хорошие видео на YouTube?</span></div>
+            </header>
+            <transition name = "menuTransition">
+                <aside v-show = "isMenuOpened">
+                    <ol>
+                        <li><a href = "../index.html">Главная страница/Старт</a></li>
+						<li><a href = "genre.html">Жанры видеороликов</a></li>
+                        <li><a href = "programs.html">Какие программы нужны</a></li>
+                        <li><a href = "howtouse.html">Как использовать программы</a></li>
+                        <li><a href = "howtopost.html">Как загрузить видео на YouTube</a></li>
+						<li><a href = "advices.html">Советы о том, как можно популяризировать видеоролики</a></li>
+                    </ol>
+                </aside>
+            </transition>
+            <section>
+                <div id = "section-title-container">Как популяризировать видео?</div>
+                <div id = "section-text-container">
+                        5 способов, как сделать популярное видео на YouTube
+						
+						<ol id = "advices-list">
+							<li>Превью - важная часть видеоролика, именно по нему люди могут первично определить качество видеоролика, ведь кому не будет интересно кликнуть по яркой и контрастной картинке, выделяющейся на фоне остальных.</li>
+							<li>Название видеоролика не наиболее менее важная его часть, нежели превью. Название стоит делать интригующим и выделяющимся, но не стоит вписывать в название того, чего нет в видеоролика иначе название будет кликбейтным.</li>
+							<li>Субтитры. Возможно ваше видо, захотят посмотреть люди, которые плохо, или же совсем не владеют вашим языком, но благодаря субтитрам, вы можете дать иностранцам возможность посмотреть ваш видеоролик без каких либо проблем с переводом, что может повысить популярность вашего канала!</li>
+							<li>Теги. Люди не видят теги, которые вы написали, но благодаря им, YouTube может продвигать видео по какой либо тематике, в которой указан ваш тег.</li>
+							<li>Доверенность. Никогда не обманывайте ваших подписчиков, ведь именно благодаря им, ваш канал продвигается в топ и набирает популярность!</li>
+						</ol>
+                </div>
+            </section>
+            <footer>
+                <div id = "authors">
+                    Авторы: <a href = "https://vk.com/alexanderostapenko2015"> Александр</a>, <a href = "https://vk.com/g.kokush5"> Егор</a>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            const app = new Vue({
+                el: "#app",
+                data: {
+                    isMenuOpened: false
+                }
+            });
+        
+        </script>
+    </body>
+</html>
